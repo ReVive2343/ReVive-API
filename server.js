@@ -5,7 +5,7 @@ require("dotenv").config();
 
 const swaggerSpec = require("./config/swagger");
 
-const authRoutes = require("./routes/authRoutes");
+const authRoutes = require("./src/routes/auth.routes");
 const userRoutes = require("./routes/userRoutes");
 const productRoutes = require("./routes/productRoutes");
 const wishlistRoutes = require("./routes/wishlistRoutes");
