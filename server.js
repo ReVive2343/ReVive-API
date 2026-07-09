@@ -3,10 +3,10 @@ const cors = require("cors");
 const swaggerUi = require("swagger-ui-express");
 require("dotenv").config();
 
-const swaggerSpec = require("./config/swagger");
+const swaggerSpec = require("./src/config/swagger");
 
 const authRoutes = require("./src/routes/auth.routes");
-const userRoutes = require("./routes/userRoutes");
+const userRoutes = require("./src/routes/user.routes");
 const productRoutes = require("./routes/productRoutes");
 const wishlistRoutes = require("./routes/wishlistRoutes");
 const requestRoutes = require("./routes/requestRoutes");
