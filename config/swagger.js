@@ -9,11 +9,15 @@ const options = {
       description: "API documentation for Revive project",
     },
     servers: [
-      {
-        url: "http://3.7.173.134:5000",
-        description: "AWS Lightsail Server",
-      },
-    ],
+  {
+    url: "https://reviveapi.defigo.in",
+    description: "Production Server",
+  },
+  {
+    url: "http://localhost:5000",
+    description: "Local Development Server",
+  },
+],
     components: {
       securitySchemes: {
         bearerAuth: {
