@@ -9,15 +9,15 @@ const options = {
       description: "API documentation for Revive project",
     },
     servers: [
-  {
-    url: "https://reviveapi.defigo.in",
-    description: "Production Server",
-  },
-  {
-    url: "http://localhost:5000",
-    description: "Local Development Server",
-  },
-],
+      {
+        url: "https://reviveapi.defigo.in",
+        description: "Production Server",
+      },
+      {
+        url: "http://localhost:5000",
+        description: "Local Development Server",
+      },
+    ],
     components: {
       securitySchemes: {
         bearerAuth: {
@@ -28,7 +28,7 @@ const options = {
       },
     },
   },
-  apis: ["./server.js", "./routes/*.js"],
+  apis: ["./src/routes/*.js"],
 };
 
 module.exports = swaggerJsdoc(options);

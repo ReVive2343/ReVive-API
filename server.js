@@ -1,51 +1,6 @@
-const express = require("express");
-const cors = require("cors");
-const swaggerUi = require("swagger-ui-express");
 require("dotenv").config();
 
-const swaggerSpec = require("./config/swagger");
-
-const authRoutes = require("./routes/authRoutes");
-const userRoutes = require("./routes/userRoutes");
-const productRoutes = require("./routes/productRoutes");
-const wishlistRoutes = require("./routes/wishlistRoutes");
-const requestRoutes = require("./routes/requestRoutes");
-const categoryRoutes = require("./routes/categoryRoutes");
-const adminRoutes = require("./routes/adminRoutes");
-const reviewRoutes = require("./routes/reviewRoutes");
-const notificationRoutes = require("./routes/notificationRoutes");
-
-const app = express();
-
-app.use(cors());
-app.use(express.json());
-
-app.use("/uploads", express.static("uploads"));
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-
-app.get("/", (req, res) => {
-  res.json({
-    message: "Revive API is running",
-    status: "success",
-  });
-});
-
-app.get("/health", (req, res) => {
-  res.json({
-    status: "healthy",
-    project: "Revive",
-  });
-});
-
-app.use("/auth", authRoutes);
-app.use("/users", userRoutes);
-app.use("/products", productRoutes);
-app.use("/products", reviewRoutes);
-app.use("/wishlist", wishlistRoutes);
-app.use("/requests", requestRoutes);
-app.use("/categories", categoryRoutes);
-app.use("/notifications", notificationRoutes);
-app.use("/admin", adminRoutes);
+const app = require("./src/app");
 
 const PORT = process.env.PORT || 5000;
 
