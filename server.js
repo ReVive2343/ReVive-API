@@ -7,7 +7,7 @@ const swaggerSpec = require("./src/config/swagger");
 
 const authRoutes = require("./src/routes/auth.routes");
 const userRoutes = require("./src/routes/user.routes");
-const productRoutes = require("./routes/productRoutes");
+const productRoutes = require("./src/routes/product.routes");
 const wishlistRoutes = require("./routes/wishlistRoutes");
 const requestRoutes = require("./routes/requestRoutes");
 const categoryRoutes = require("./routes/categoryRoutes");
