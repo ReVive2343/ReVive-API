@@ -1,4 +1,4 @@
-const pool = require("../../config/db");
+const pool = require("../config/db");
 
 const getNotifications = async (userId) => {
   const result = await pool.query(

@@ -1,4 +1,4 @@
-const pool = require("../../config/db");
+const pool = require("../config/db");
 
 const createRequest = async (productId, requesterId, requestData) => {
   const { request_type = "buy", message } = requestData;
