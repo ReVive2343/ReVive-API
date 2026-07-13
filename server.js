@@ -10,10 +10,10 @@ const userRoutes = require("./src/routes/user.routes");
 const productRoutes = require("./src/routes/product.routes");
 const wishlistRoutes = require("./src/routes/wishlist.routes");
 const requestRoutes = require("./src/routes/request.routes");
-const categoryRoutes = require("./routes/categoryRoutes");
+const categoryRoutes = require("./src/routes/category.routes");
 const adminRoutes = require("./routes/adminRoutes");
 const reviewRoutes = require("./src/routes/review.routes");
-const notificationRoutes = require("./routes/notificationRoutes");
+const notificationRoutes = require("./src/routes/notification.routes");
 
 const app = express();
 
