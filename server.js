@@ -12,7 +12,7 @@ const wishlistRoutes = require("./src/routes/wishlist.routes");
 const requestRoutes = require("./src/routes/request.routes");
 const categoryRoutes = require("./routes/categoryRoutes");
 const adminRoutes = require("./routes/adminRoutes");
-const reviewRoutes = require("./routes/reviewRoutes");
+const reviewRoutes = require("./src/routes/review.routes");
 const notificationRoutes = require("./routes/notificationRoutes");
 
 const app = express();
