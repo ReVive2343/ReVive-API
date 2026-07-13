@@ -18,6 +18,12 @@ const options = {
         description: "Local Development Server",
       },
     ],
+    tags: [
+      {
+        name: "Auth",
+        description: "Authentication endpoints",
+      },
+    ],
     components: {
       securitySchemes: {
         bearerAuth: {
