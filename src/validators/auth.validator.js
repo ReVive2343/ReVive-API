@@ -8,6 +8,14 @@ const validateRegister = (req, res, next) => {
     });
   }
 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return res.status(400).json({
+      success: false,
+      message: "Please provide a valid email address",
+    });
+  }
+
   if (password.length < 6) {
     return res.status(400).json({
       success: false,
@@ -25,6 +33,14 @@ const validateLogin = (req, res, next) => {
     return res.status(400).json({
       success: false,
       message: "Email and password are required",
+    });
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return res.status(400).json({
+      success: false,
+      message: "Please provide a valid email address",
     });
   }
 
