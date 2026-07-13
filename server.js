@@ -11,7 +11,7 @@ const productRoutes = require("./src/routes/product.routes");
 const wishlistRoutes = require("./src/routes/wishlist.routes");
 const requestRoutes = require("./src/routes/request.routes");
 const categoryRoutes = require("./src/routes/category.routes");
-const adminRoutes = require("./routes/adminRoutes");
+const adminRoutes = require("./src/routes/admin.routes");
 const reviewRoutes = require("./src/routes/review.routes");
 const notificationRoutes = require("./src/routes/notification.routes");
 
